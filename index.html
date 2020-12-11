@@ -1,75 +1,143 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <title>Mã sinh</title>
+    <link rel="icon" href="https://jollibee.com.vn/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 </head>
-
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
+    <div class="menu-header">
+        <img src="https://jollibee.com.vn/images/logo.png" alt="" class="logo">
+        <ul class="menu">
+            <li>TRANG CHỦ</li>
+            <li>VỀ JOLLIBEE</li>
+            <li>THỰC ĐƠN</li>
+            <li>KHUYẾN MÃI</li>
+            <li>DỊCH VỤ</li>
+            <li>TIN TỨC</li>
+            <li>CỬA HÀNG</li>
+            <li>LIÊN HỆ</li>
+            <li>TUYỂN DỤNG</li>
         </ul>
-    </nav>
+        <div class="login">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Đăng nhập/Đăng ký</button>
+        </div>
+        <img src="https://jollibee.com.vn/images/home/delivery.png" class="tel">
+    </div>
+    <div class="container">
+        <img class="banner" src="https://jollibee.com.vn/uploads/group/640f3ac55b0e2b-bannerthcn.jpg" alt="">
+        <div class="menu-footer">
+            <ul>
+                <li>COMBO</li>
+                <li>GÀ RÒN VUI VẺ</li>
+                <li>GÀ SỐT CAY</li>
+                <li>MỲ SỐT BÒ HẦM</li>
+                <li>BURGER && CƠM</li>
+                <li>PHẦN ĂN PHỤ</li>
+                <li>MÓN TRÁNG MIỆNG</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-dish">
+        <img src="https://jollibee.com.vn/images/menu/bg-top.png" class="xa-lach">
+    </div>
+    <div class="bg-dish2">
+        <img src="https://jollibee.com.vn/images/menu/bg-bottom.png" class="xa-lach">
+    </div>
+    <div class="order" id="order">
+        <div class="sl" id="sl">
+            0
+        </div>
+    </div>
+    <div class="order-bar" id="order-bar">
+        <div class="back" id="back">X</div>
+        <div class="order-tt">
+            ORDER
+        </div>
+        
+        <div class="ctn-order" id="ctn-order">
+           
+            <div class="ctn-order-dish" id="ctn-order-dish">
+                <div class="name-dish">2 MIENG GÀ GIÒN </div>
+                <div class="ctn-quantity">
+                    <span><button class="trim">-</button></span>
+                    <span class="quantity">1</span>
+                    <span><button class="plus">+</button></span>
+                    <span class="price">60000 D</span>
+                </div>
+                <div class="ctn-delete"> <button class="delete">X</button></div>
+            </div>-->
+        </div>
+            <div class="ctn-total">
+                <div class="tt-total">TỔNG </div>
+                <div class="total" id="total">0 Đ</div>
+            </div>
+            <div class="check-out">CHECK-OUT</div>
+        </div>
+       
+      
+   
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
-
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
-
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+    <div class="dish" id="dish">
+     
+     <!--CHO DDE JS DO VAO-->
+    
+       
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <img  class="logo-footer" src="https://jollibee.com.vn/images/logo-footer.png" alt="">
+            <div class="doan-van">
+                <p class="add">
+                    Địa chỉ: Lầu 5, tòa nhà SCIC, 16 Trương Định,<br> Phường 6, Quận 3, Tp. Hồ Chí Minh, Việt Nam
+                </p>
+                <p class="add">Tổng đài: 1900-1533</p>
+                <p class="add">Hộp thư góp ý: jbvnfeedback@jollibee.com.vn</p>
+            </div>
+            
+        </div>
+        <div class="tell-footer">
+            <img src="https://jollibee.com.vn/images/home/delivery-lg.png">
+            <p>
+                Chính sách và quy định chung Chính sách hoạt động
+            </p>
+        </div>
+        <div class="connect">
+            <p>HÃY KẾT NỐI VỚI CHÚNG TÔI</p>
+            <div class="social">
+            <div class="icon">
+                <button>f</button>
+            </div>
+            <div class="icon">
+                <button>g</button>
+                <a href="tel:19001009">19001009</a>
+            </div>
+            <div class="icon">
+                <button><i class="fab fa-facebook-square"></i></button>
+                <a href="https://www.facebook.com/ngocnt.5792/" title="Liên hệ FB" target="_blank">Facebook</a>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
+<script type="text/javascript">
+    
+      document.getElementById('order').onclick= function gg(){
+            document.getElementById('order-bar').style.display='block';
+            document.getElementById('order').style.display='none';
+        }
+        document.getElementById('back').onclick=function hihi(){
+            document.getElementById('order').style.display='block';
+            document.getElementById('order-bar').style.display='none';
+        }
+</script>
+<script src="js/js.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>
